@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="doma3.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBanović - forme</title>
+  </head>
+  <body>
+    <form>
+      <h2>Anketa</h2>
+      <fieldset>
+        <label for="name">Ime:</label>
+        <input type="text" name="name" id="name" />
+        <label for="surname">Prezime:</label>
+        <input type="text" name="surname" id="surname"
+      /></fieldset>
+      <fieldset>
+        <label for="slikaKorisnika">Učitajte vašu sliku lica:</label>
+        <input type="file" name="slikakorisnika" id="slikaKorisnika" />
+      </fieldset>
+
+      <fieldset>
+        <label for="date">Datum rođenja:</label>
+        <input type="date" name="date" id="date" />
+      </fieldset>
+      <fieldset>
+        <p>Odaberite koje vozačke dozvole posjedujete:</p>
+        <input type="checkbox" name="vozacka1" id="vozacka1" value="vozackaA" />
+        <label for="vozacka">Vozačka kategorija A</label><br />
+
+        <input type="checkbox" name="vozacka2" id="vozacka2" value="vozackaB" />
+        <label for="vozacka">Vozačka kategorija B</label><br />
+        <input type="checkbox" name="vozacka3" id="vozacka3" value="vozackaC" />
+        <label for="vozacka">Vozačka kategorija C</label>
+      </fieldset>
+      <fieldset>
+        <p>Odaberite spol:</p>
+        <input type="radio" id="Choice1" name="spol" value="musko" />
+        <label for="Choice1">Muško</label>
+
+        <input type="radio" id="Choice2" name="spol" value="zensko" />
+        <label for="Choice2">Žensko</label>
+      </fieldset>
+      <fieldset>
+        <label for="color">Odaberite najdražu boju:</label>
+        <input type="color" id="color" name="color" /><br />
+      </fieldset>
+      <fieldset>
+        <p>Opišite kako ste doznali za ovu anketu:</p>
+        <textarea
+          name="message"
+          style="
+            width: 420px;
+            height: 210px;
+            background-color: rgb(188, 196, 162);
+            resize: none;
+          "
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <label for="zupanije">Odaberite županiju u kojoj živite:</label>
+        <input list="zupanije" id="zupanija" name="zupanija" />
+        <datalist id="zupanije">
+          <option value="Grad Zagreb">Grad Zagreb</option>
+          <option value="Sisačko-moslavačka">Sisačko-moslavačka</option>
+          <option value="Koprivničko-križevačka">Koprivničko-križevačka</option>
+          <option value="Međimurska">Međimurska</option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <label for="range">Koliko ste zadovoljni ovom anketom?</label>
+        0
+        <input type="range" id="range" name="range" min="0" max="100" />
+        100
+      </fieldset>
+      <input type="submit" value="Pošalji podatke" />
+    </form>
+    <br />
+    <a href="./index.html">Povratak na početnu stranicu!</a>
+  </body>
+</html>
