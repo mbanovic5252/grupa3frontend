@@ -1,0 +1,32 @@
+body {
+  font-family: "Crete Round", Arial, Helvetica, serif;
+  color: #fff;
+  background-color: #000;
+}
+#pbelowpic {
+  font-size: 0.8rem;
+  margin: 0 auto auto auto;
+}
+ul {
+  list-style-type: none;
+}
+.osobnipodacidiv {
+  text-align: left;
+  width: 30rem;
+  padding: 0 0 1.2rem 0;
+}
+a {
+  color: #00ffff;
+  background: none;
+}
+body a:hover {
+  color: #f49d1a;
+}
+body > h3 {
+  text-decoration: underline #ffa500;
+  color: #808080;
+}
+.osobnipodacidiv p::first-letter {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
