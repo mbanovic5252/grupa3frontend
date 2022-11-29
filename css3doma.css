@@ -30,31 +30,28 @@
 }
 .logo-div {
   background-color: #add8e6;
-  width: 400px;
+  flex: 1 1 33%;
   margin: 0 1.3rem 0 0;
 }
 .slika-div {
   background-color: #add8e6;
-  width: 1450px;
+  flex: 1 1 66%;
 }
-.menu-div {
-  background-color: #90ee90;
-  flex: 1 1 100%;
-  margin: 10px 0 0 0;
-}
+
 .flex33-container {
   display: flex;
   justify-content: center;
   padding: 0rem 1.3rem;
+  height: 100px;
 }
 .aside-div {
   position: relative;
-
-  height: 100px;
+  flex: 0 1 20%;
   background-color: #ffa500;
   display: flex;
   justify-content: left;
   align-content: flex-end;
+  margin-right: 1%;
 }
 .p-aside {
   position: absolute;
@@ -63,18 +60,26 @@
   padding: 0;
   margin: 0;
 }
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+.menu-div {
+  background-color: #90ee90;
+  flex: 0 1 57.5%;
+}
 .main-div {
   background-color: #ffa500;
   display: inline-block;
-  height: 100px;
+  flex: 0 1 60%;
 }
 .aside2-div {
   background-color: #ffa500;
-
-  height: 100px;
+  flex: 0 1 20%;
+  margin-left: 1%;
 }
 
-/* Animation */
+/*CSS Animation#1 */
 @keyframes animation1 {
   from {
     background-color: #302d2d;
@@ -108,7 +113,7 @@
   height: 350px;
 }
 
-/* Animation#2 */
+/* CSS Animation#2 */
 .animation2-container {
   display: flex;
   justify-content: space-between;
@@ -125,33 +130,65 @@
   background-color: #ff8800;
   color: white;
 }
-/* Animation#3 */
+/* CSS Animation#3 */
 .animation3-container {
-  display: flex;
-  justify-content: center;
-}
-.animation3-div {
-  width: 200px;
-  height: 200px;
-  background-image: linear-gradient(#000, #000), linear-gradient(#000, #000),
-    linear-gradient(#000, #000), linear-gradient(#000, #000);
-  background-size: 0% 5px, 5px 0%, 0% 5px;
-  background-position: top left, top center, 100px 100%;
-  background-repeat: no-repeat;
-  animation: animation3 3s;
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  text-align: center;
+  line-height: 300px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+
+  animation-name: topborder, rightborder, bottomborder, leftborder, span;
+  animation-duration: 1s, 1s, 1s, 1s, 1.5s;
+  animation-delay: 0s, 1s, 2s, 3s, 4s;
+  animation-iteration-count: 1, 1, 1, 1, infinite;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
-@keyframes animation3 {
-  25% {
-    background-size: 50% 5px, 5px 0%, 0% 5px;
+@keyframes topborder {
+  from {
+    border-top-color: white;
   }
-
-  /*load down*/
-  75% {
-    background-size: 50% 5px, 5px 100%, 0% 5px;
+  to {
+    border-top-color: black;
   }
-  /*load to left*/
+}
+@keyframes rightborder {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: black;
+  }
+}
+@keyframes bottomborder {
+  from {
+    border-bottom-color: white;
+  }
+  to {
+    border-bottom-color: black;
+  }
+}
+@keyframes leftborder {
+  from {
+    border-left-color: white;
+  }
+  to {
+    border-left-color: black;
+  }
+}
+@keyframes span {
+  0% {
+    color: white;
+  }
+  33%,
+  66% {
+    color: black;
+  }
   100% {
-    background-size: 50% 5px, 5px 100%, 50% 5px;
+    color: white;
   }
 }
