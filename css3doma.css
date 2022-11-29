@@ -1,0 +1,157 @@
+.flex1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns {
+  border: 1px solid lightblue;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #4b7398;
+  padding: 0.45rem 0.35rem;
+}
+
+.flex2-container {
+  display: flex;
+}
+.p-flexbox2 {
+  border: 1px solid lightblue;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #4b7398;
+  padding: 0.45rem 0.35rem;
+  width: 150px;
+}
+.flex31-container {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1.3rem 0.75rem 1.3rem;
+}
+.logo-div {
+  background-color: #add8e6;
+  width: 400px;
+  margin: 0 1.3rem 0 0;
+}
+.slika-div {
+  background-color: #add8e6;
+  width: 1450px;
+}
+.menu-div {
+  background-color: #90ee90;
+  flex: 1 1 100%;
+  margin: 10px 0 0 0;
+}
+.flex33-container {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1.3rem;
+}
+.aside-div {
+  position: relative;
+
+  height: 100px;
+  background-color: #ffa500;
+  display: flex;
+  justify-content: left;
+  align-content: flex-end;
+}
+.p-aside {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+.main-div {
+  background-color: #ffa500;
+  display: inline-block;
+  height: 100px;
+}
+.aside2-div {
+  background-color: #ffa500;
+
+  height: 100px;
+}
+
+/* Animation */
+@keyframes animation1 {
+  from {
+    background-color: #302d2d;
+  }
+  to {
+    background-color: #ca4e05;
+    transform: translate(0, -150px);
+    width: 400px;
+    height: 150px;
+  }
+}
+.animation-div {
+  border: 0.1rem solid transparent;
+  border-radius: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 100px;
+  animation-name: animation1;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+.animation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+
+/* Animation#2 */
+.animation2-container {
+  display: flex;
+  justify-content: space-between;
+}
+.btns2 {
+  border: 0.1rem solid transparent;
+  background-color: #ffa500;
+  padding: 0.45rem 0.35rem;
+  width: 20%;
+  font-size: large;
+}
+.btns2:hover {
+  border-radius: 1rem;
+  background-color: #ff8800;
+  color: white;
+}
+/* Animation#3 */
+.animation3-container {
+  display: flex;
+  justify-content: center;
+}
+.animation3-div {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(#000, #000), linear-gradient(#000, #000),
+    linear-gradient(#000, #000), linear-gradient(#000, #000);
+  background-size: 0% 5px, 5px 0%, 0% 5px;
+  background-position: top left, top center, 100px 100%;
+  background-repeat: no-repeat;
+  animation: animation3 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes animation3 {
+  25% {
+    background-size: 50% 5px, 5px 0%, 0% 5px;
+  }
+
+  /*load down*/
+  75% {
+    background-size: 50% 5px, 5px 100%, 0% 5px;
+  }
+  /*load to left*/
+  100% {
+    background-size: 50% 5px, 5px 100%, 50% 5px;
+  }
+}
