@@ -1,0 +1,26 @@
+$colorgreen: #008000;
+$colorred: #ff0000;
+$itemborder: 2px solid #ff0000;
+$itemheight: 50px;
+
+h1 {
+    font-size: larger;
+    color: $colorred
+}
+.main-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    :nth-child(3){
+        order: 1;
+    }
+    .item-div {
+        line-height: $itemheight;
+        height: $itemheight;
+        flex: 0 1 24%;
+        background-color: $colorgreen;
+        border: $itemborder;
+        text-align: center;
+        
+    }
+}

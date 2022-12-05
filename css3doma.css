@@ -192,3 +192,25 @@
     color: white;
   }
 }
+/*CSS Animation#4*/
+.animation4-container {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  animation-name: hover;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes hover {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: lightblue;
+  }
+}

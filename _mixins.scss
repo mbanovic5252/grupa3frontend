@@ -1,0 +1,7 @@
+@mixin animation {
+    animation-name: animation1;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+}

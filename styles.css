@@ -1,0 +1,21 @@
+h1 {
+  font-size: larger;
+  color: #ff0000;
+}
+
+.main-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.main-div :nth-child(3) {
+  order: 1;
+}
+.main-div .item-div {
+  line-height: 50px;
+  height: 50px;
+  flex: 0 1 24%;
+  background-color: #008000;
+  border: 2px solid #ff0000;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
